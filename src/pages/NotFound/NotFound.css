@@ -1,0 +1,5 @@
+.not-found {
+    padding: 2em 1em;
+    font-size: var(--primary-fs);
+    text-align: center;
+}

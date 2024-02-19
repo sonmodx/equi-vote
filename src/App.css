@@ -1,0 +1,27 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+:root {
+  --primary-fs: clamp(2rem, 1rem + 3vw, 3rem);
+  --secondary-fs: clamp(1rem, 1rem + 2vw, 2rem);
+  --thirdary-fs: clamp(0.75rem, 0.75rem + 2vw, 1.5rem);
+  --main-clr: white;
+  --secondary-clr: #161B22;
+  --bg-clr: #0D1117;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.app {
+  min-height: 100vh;
+  min-height: 100dvh;
+  font-family: system-ui, sans-serif;
+  background-color: var(--bg-clr);
+  color: var(--main-clr);
+}
