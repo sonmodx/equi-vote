@@ -1,0 +1,89 @@
+.creation {
+    padding: 1rem 1.5rem;
+}
+
+.creation .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2em;
+    margin-bottom: 4em;
+}
+
+.creation .header .title{
+    font-size: var(--primary-fs);
+}
+
+.creation .form-wrapper {
+    width: min(90%, 50rem);
+    margin-inline: auto;
+}
+
+.creation .form-wrapper > * {
+    margin-top: 1.5em;
+}
+
+.creation .form-wrapper .input-field {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    text-align: center;
+}
+
+.creation .form-wrapper .input-field > .group-input-btn {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.creation .form-wrapper .input-field label {
+    font-size: var(--thirdary-fs);
+}
+
+.creation .form-wrapper .input-field input {
+    font-size: var(--thirdary-fs);
+    margin-left: 1em;
+    padding: .25em .5em;
+    outline-color: transparent;
+    border-color: transparent;
+    border-radius: 100vw;
+    min-width: 50px;
+}
+
+.creation .form-wrapper .btn {
+    cursor: pointer;
+    font-size: var(--thirdary-fs);
+    font-weight: 900;
+    padding: .25em 1em;
+    border-radius: 100vw;
+    outline-color: transparent;
+    border-color: transparent;
+    color: var(--bg-clr);
+    transition: box-shadow .125s ease,
+    color .5s ease;
+}
+
+.creation .form-wrapper .submit.btn {
+    transition: box-shadow .125s ease,
+    color .5s ease;
+}
+
+.creation .form-wrapper .add.btn {
+    margin-left: .5em;
+    transition: transform .3s ease;
+}
+
+.creation .form-wrapper .submit.btn:is(:focus-visible, :hover) {
+    box-shadow: 0 0 0 5px var(--bg-clr),
+                0 0 0 10px var(--accent-clr);
+    color: var(--main-clr);
+    background-color: var(--accent-clr);
+}
+
+.creation .form-wrapper .add.btn:is(:focus-visible, :hover) {
+    transform: translateY(10%);
+}
+
+.creation .wrapper-votes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5em;
+}

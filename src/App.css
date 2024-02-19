@@ -11,11 +11,16 @@
   --main-clr: white;
   --secondary-clr: #161B22;
   --bg-clr: #0D1117;
+  --accent-clr: #15133C;
 }
 
 img {
   display: block;
   max-width: 100%;
+}
+
+input, textarea, button {
+  font-family: system-ui, sans-serif;
 }
 
 .app {

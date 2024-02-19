@@ -1,0 +1,8 @@
+.item-vote {
+    border-color: transparent;
+    border-radius: 100vw;
+    background-color: var(--secondary-clr);
+    color: var(--main-clr);
+    padding: .5em 1em;
+    align-self: center;
+}

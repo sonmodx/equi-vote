@@ -1,0 +1,55 @@
+.username {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.username input {
+    padding: .5em 1em;
+    background-color: var(--secondary-clr);
+    border-color: transparent;
+    outline-width: 0;
+    outline-color: transparent;
+    color: var(--main-clr);
+    font-size: var(--thirdary-fs);
+    letter-spacing: 3px;
+
+}
+
+.username input::placeholder {
+    letter-spacing: 3px;
+}
+
+.username .next-btn {
+    cursor: pointer;
+    position: relative;
+    padding: .5em 1em;
+    font-size: var(--thirdary-fs);
+    font-weight: 700;
+    overflow-x: hidden;
+    border: none;
+    transition: .3s ease;
+    transition-delay: .125s;
+    z-index: 1;
+}
+
+.username .next-btn::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--accent-clr);
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: .3s ease;
+    z-index: -1;
+}
+
+.username .next-btn:is(:hover,:focus-visible)::after {
+    transform: translateX(0%);
+}
+
+.username .next-btn:is(:hover,:focus-visible) {
+    color: var(--main-clr);
+    
+}

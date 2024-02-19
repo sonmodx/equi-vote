@@ -13,13 +13,6 @@
     border-radius: calc(100vw + 2em);
 }
 
-.home .container .middle-img {
-    width: 160px;
-    aspect-ratio: 1;
-    margin-inline: auto;
-    pointer-events: none;
-}
-
 .home .container .wrapper-btn {
     margin-top: 2em;
     display: flex;
@@ -32,6 +25,7 @@
 
 .home .container .wrapper-btn .btn {
     cursor: pointer;
+    text-decoration: none;
     font-size: var(--thirdary-fs);
     font-weight: 700;
     padding: .5em 2em;
@@ -39,6 +33,8 @@
     border-color: transparent;
     transition: 0.3s ease;
     outline-color: transparent;
+    background-color: var(--main-clr);
+    color: var(--bg-clr);
 }
 
 .home .container .wrapper-btn .btn.create{

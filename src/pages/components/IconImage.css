@@ -1,0 +1,5 @@
+.icon {
+    width: min(120px, 20vw);
+    aspect-ratio: 1;
+    margin-inline: auto;
+}

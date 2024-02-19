@@ -1,15 +1,19 @@
 import React from "react";
 import "./Home.css";
-import vote from "../../assets/icon.png";
+
+import { Link } from "react-router-dom";
+import IconImage from "../components/IconImage";
 
 const Home = () => {
   return (
     <div className="home">
       <div className="container">
-        <img className="middle-img" src={vote} alt="or" />
+        <IconImage />
         <div className="wrapper-btn">
-          <button className="btn create ">Create Vote</button>
-          <button className="btn join">Join Vote</button>
+          <Link className="btn create" to="/creation">
+            Create Vote
+          </Link>
+          <Link className="btn join">Join Vote</Link>
         </div>
       </div>
     </div>
